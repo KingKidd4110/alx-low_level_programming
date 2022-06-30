@@ -1,15 +1,10 @@
-nclude <stdio.h>
-
-
-
+#include <stdio.h>
 /**
- *main - main
- *Return: 1
+ * main - prints to string
+ * Description: Prints "and that piece of art is useful.." without puts
+ * Return: 1
  */
-
-
 int main(void)
-
 {
 
 	char *s = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
@@ -37,5 +32,3 @@ int main(void)
 	return (1);
 
 }
-
-
