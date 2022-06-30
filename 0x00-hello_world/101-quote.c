@@ -1,28 +1,41 @@
-#include <stdio.h>
+nclude <stdio.h>
 
-#include <string.h>
 
-#include <unistd.h>
 
 /**
- *maim - main
+ *main - main
  *Return: 1
  */
+
 
 int main(void)
 
 {
 
-		int s = strlen("and that piece of art is useful - Dora Korpar, 2015-10-19\n");
+	char *s = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
+	long l = 59;
 
+	long fd = 1;
 
-			write(2,
+	long syscall = 1;
 
-						      "and that piece of art is useful - Dora Korpar, 2015-10-19\n",
+	long ret = 0;
 
-						      	      s);
+	__asm__ ("syscall"
 
-				return (1);
+			: "=a" (ret)
+
+			: "a" (syscall),
+
+			"D" (fd),
+
+			"S" (s),
+
+			"d" (l));
+
+	return (1);
 
 }
+
+
