@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
  * main - main
- * program that prints the alphabet in lowercase, followed by a new line
+ * Prints the alphabet in lowercase, followed by a new line
  * Return: 0
  */
 int main(void)
 {
-	char c='a';
+	char c = 'a';
 
-	while (c<='z')
+	while (c <= 'z')
 	{
 		if (c != 'q' && c != 'e')
 			putchar(c);
