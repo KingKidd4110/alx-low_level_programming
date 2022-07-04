@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i, j, k,;
 
 	for (i = 0; i < 1000; i++)
 	{
@@ -17,8 +17,8 @@ int main(void)
 		if (j < k && k < l)
 		{
 			putchar(j + '0');
-			putchar(l + '0');
 			putchar(k + '0');
+			putchar(l + '0');
 
 			if (i < 700)
 			{
