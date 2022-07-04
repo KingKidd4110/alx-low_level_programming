@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	int i,j,k;
+	int i, j, k;
 
-	1 = 0
+	i = 0
 
-		while (1 < 100)
+		while (i < 100)
 		{
 			j = i % 10
 				k = i / 10
@@ -30,5 +30,5 @@ int main(void)
 		}
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
