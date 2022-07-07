@@ -5,25 +5,25 @@
  */
 void print_triangle(int size)
 {
-	int c, i, j;
+	int row, hashes, spaces;
 
-	c = 0;
-	i = size - 1;
-	while (c < size)
+	if (size <= 0)
 	{
-		i = size - 1 - c;
-		j = c + 1;
-		while (i > 0)
+		_putchar('\n');
+	}
+	else
+	{
+		for (row = 1; row <= size; row++)
+		{
+		for (spaces = size - row; spaces >= 1; spaces--)
 		{
 			_putchar(' ');
-			i--;
 		}
-		while (j > 0)
+		for (hashes = 1; hashes <= row; hashes++)
 		{
 			_putchar('#');
-			j--;
 		}
 		_putchar('\n');
-		c++;
+		}
 	}
 }
