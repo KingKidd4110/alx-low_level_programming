@@ -5,7 +5,7 @@
  * @n: number of times the '\' char is printed
  * Description: Can only use _putchar to print
  */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int c, i;
 
