@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define MAX 125
 #define MIN 1
