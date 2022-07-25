@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
  * main - multiply two num and print result
  * @argv: array pointer
@@ -16,7 +14,7 @@ int main(int argc, char *argv[])
 	k = 3;
 	if (argc != k)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	printf("%d\n", atoi(argv[i]) * atoi(argv[j]));
