@@ -1,4 +1,4 @@
-#unclude "main.h"
+#include "main.h"
 /**
  * free_grid - frees two dimentional grid
  * @grid: grid
