@@ -13,7 +13,10 @@ size_t print_list(const list_t *h)
 {
 	int c = 0;
 
-	cnode = *h;
+	cnode = h;
+
+	while (cnode)
+	{
 
 	if (cnode->str == NULL)
 	{
