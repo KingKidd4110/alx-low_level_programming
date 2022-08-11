@@ -11,10 +11,8 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *cnode;
-	size_t c;
+	int c = 0;
 
-	c = 0;
 	cnode = h;
 
 	if (cnode->str == NULL)
@@ -23,9 +21,9 @@ size_t print_list(const list_t *h)
 	}
 
 	else
-		while (cnode != NULL)
 	{
 		printf("[%d] %s\n", cnode->len, cnode->str);
+	}
 		cnode = cnode->next;
 		c++;
 
