@@ -13,21 +13,19 @@ size_t print_list(const list_t *h)
 {
 	int c = 0;
 
-	cnode = *h;
-
-	while (cnode)
+	while (h)
 	{
 
-	if (cnode->str == NULL)
+	if (h->str == NULL)
 	{
 		printf("[0] (nil)\n");
 	}
 
 	else
 	{
-		printf("[%d] %s\n", cnode->len, cnode->str);
+		printf("[%d] %s\n", h->len, h->str);
 	}
-		cnode = cnode->next;
+		h = h->next;
 		c++;
 
 	}
