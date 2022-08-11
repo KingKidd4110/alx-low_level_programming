@@ -13,7 +13,7 @@ size_t list_len(const list_t *h)
 	size_t count;
 
 	count = 0;
-	current = h;
+	currentnode = h;
 	while (currentnode != NULL)
 	{
 		currentnode = currentnode->next;
