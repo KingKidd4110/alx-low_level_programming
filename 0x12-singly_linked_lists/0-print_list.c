@@ -23,6 +23,7 @@ size_t print_list(const list_t *h)
 	}
 
 	else
+		while (cnode != NULL)
 	{
 		printf("[%d] %s\n", cnode->len, cnode->str);
 		cnode = cnode->next;
