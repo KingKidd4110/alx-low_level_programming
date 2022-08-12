@@ -18,6 +18,7 @@ main			;	entry point label
 	call printf	;	calls c printf function from c
 
 	pop rbp		;	restore stack from push instruction
+	mov rax,0	;	return value from 64bit system
 
 	ret	
 
