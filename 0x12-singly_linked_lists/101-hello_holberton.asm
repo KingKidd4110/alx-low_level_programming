@@ -2,7 +2,7 @@
 	
 	section .data	;	initialise data section
 
-msg db 'Hello, Holberton', 0xa  ;	message to be printed
+msg db 'Hello, Holberton', 0  ;	message to be printed
 
 fmt:	    	db "%s", 10, 0	; format
 
@@ -15,7 +15,7 @@ main			;	entry point label
 	mov rsi,msg	;	store values
 	mov rax,0	;	assign 64bit register
 
-	call printf	;	calls c printf function
+	call printf	;	calls c printf function from c
 
 	pop rbp		;	restore stack from push instruction
 
