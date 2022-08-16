@@ -1,6 +1,32 @@
 #include "lists.h"
 
 /**
+ * _strlen - returns length of string
+ * @s: char string
+ * Return: length
+ */
+
+int _strlen(const char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+
+
+
+
+
+
+
+
+
+/**
  * add_node - add a new node at the beginning
  * @head: double pointer to head
  * @str: string to be saved in new node(duplicated)
