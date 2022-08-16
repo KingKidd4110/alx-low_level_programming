@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * listint_len - returns number of elements in listint_t
  * @h: pointer to string
@@ -14,5 +16,5 @@ size_t listint_len(const listint_t *h)
 
 		num++;
 	}
-	return (num)'
+	return (num);
 }
