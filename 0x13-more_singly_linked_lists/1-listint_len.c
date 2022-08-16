@@ -6,15 +6,13 @@
 
 size_t listint_len(const listint_t *h)
 {
-	int data;
+	size_t num = 0;
 
-	Node *current_node = h;
-
-	while (current_node != NULL)
+	while (h != NULL)
 	{
-		printf("%d" current_node->data);
+		h = h->next;
 
-		current_node = current_node->next;
+		num++;
 	}
-	return (data)
+	return (num)'
 }
