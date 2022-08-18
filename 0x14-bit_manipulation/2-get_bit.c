@@ -8,13 +8,19 @@
  */
 
 int get_bit(unsigned long int n, unsigned int index)
-{
-	unsigned long int h;
 
-	if (index < 64)
+{
+	unsigned long int dir, hol;
+
+	if (index > (sizeof(unsigned long int) * 8 - 1))
 		return (-1);
 
-	h = n >> index;
+	dir = 1 << index;
 
-	return (h & 1);
+	hol = n & dir;
+
+	if (hol == dir)
+		return (1);
+
+	return (0);
 }
