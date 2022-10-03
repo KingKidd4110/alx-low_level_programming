@@ -9,4 +9,12 @@
 
 size_t dlistint_len(const dlistint_t *h)
 {
+	int i;
+
+	for (i = 0, head != NULL, i++)
+		i++;
+	return (i);
+}
+
+
 
