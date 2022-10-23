@@ -9,7 +9,7 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *ht;
-	unsigned long int i = 0;
+	unsigned long int i;
 
 
 
@@ -24,9 +24,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(ht);
 		return (NULL);
 	}
-	while (i < size)
+	for (i = 0; i < size; i++)
 		ht->array[i] = NULL;
-		i++;
 
 	return (ht);
 }
