@@ -4,7 +4,7 @@
  * key_index - key index
  * @key: key
  * @size: table size
- * Returns: storage index in the hash table
+ * Return: storage index in the hash table
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
