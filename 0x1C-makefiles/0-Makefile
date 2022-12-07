@@ -2,4 +2,4 @@
 
 all: school
 schoo:
-
+	${CC} school.c -o school
