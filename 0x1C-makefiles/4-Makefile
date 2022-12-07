@@ -1,0 +1,28 @@
+NAME = school
+CC = gcc
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) -o $(NAME) $(OBJ) $(CFLAGS)
+
+%.o: %.c
+	$(CC) -c $< -o $@ $(CFLAGS)
+
+clean:
+	$(RM) $(OBJ)
+	$(RM) *~ \#*\# .\#*
+	$(RM) .emacs* .vim*
+
+fclean: clean
+	$(RM) $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+re: fclean all
