@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-*** Defines class island_perimeter ***
+""" Defines class island_perimeter """
 
 
 def island_perimeter(grid):
-    *** variables ***
+    """ variables """
 
     x = len(grid[0])
 
