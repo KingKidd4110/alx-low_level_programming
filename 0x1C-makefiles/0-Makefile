@@ -1,5 +1,6 @@
 #first makefile
 
 all: school
-schoo:
-	${CC} school.c -o school
+school:
+	gcc -o school school.c
+	
