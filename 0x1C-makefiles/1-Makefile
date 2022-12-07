@@ -1,0 +1,9 @@
+.PHONY: all
+all: school
+
+CC = gcc
+
+SRCS := $(school.c)
+%.o: %.c
+	${CC} -c $<
+
