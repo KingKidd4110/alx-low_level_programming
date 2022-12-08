@@ -1,5 +1,4 @@
+school:
+	$(non)
 
-all: school
-school: school
-	gcc -o school school.c
-	
+all: school	
