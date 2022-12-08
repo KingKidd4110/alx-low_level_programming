@@ -1,5 +1,5 @@
 
 all: school
-school:
+school: school
 	gcc -o school school.c
 	
